@@ -1,24 +1,24 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  
-  Route, Routes
-} from "react-router-dom";
+import Navbar from './components/Navbar';
 import './App.css';
-import Navbar from "./components/Navbar.js";
-import Home from './components/pages/Home'
+import Home from './components/pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Services from './components/pages/Services';
+import AboutUs from './components/pages/AboutUs';
+import TripInfo from './components/pages/TripInfo';
 
 function App() {
   return (
     <>
-    <Router>
-      <Navbar />
-      {/* <Switch> */}
-      <Routes>
-        <Route path='/' exact component={Home} />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/about-us' element={<AboutUs />} />
+          <Route path='/trip-info' element={<TripInfo />} />
         </Routes>
-      {/* </Switch> */}
-    </Router>
+      </Router>
     </>
   );
 }
