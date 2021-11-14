@@ -25,14 +25,15 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
-  const logo = require('../assets/images/soledreamstriplogo.png').default
+ const logo = require('../assets/images/soledreamstriplogo.png').default
 
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src={logo} alt=''/>
+            {/* <img src={logo} alt='Sole Dreams Logo'/> */}
+            <h1 className=''>Sole</h1>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

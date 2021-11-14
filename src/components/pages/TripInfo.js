@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../App.css';
-import Form from '../Form';
+import DataForm from '../Form';
 
 export default function TripInfo() {
   return (
   <div className="trip-info">
-    <Form />
+    <DataForm />
   </div>
   )
 }

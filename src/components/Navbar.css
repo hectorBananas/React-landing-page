@@ -27,6 +27,14 @@
   font-size: 2rem;
   display: flex;
   align-items: center; */
+  text-decoration: none;
+
+}
+
+.navbar-logo h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-shadow: 2px 2px black;
 }
 
 .navbar-logo > img {

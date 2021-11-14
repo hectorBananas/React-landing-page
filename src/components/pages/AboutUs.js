@@ -5,7 +5,10 @@ import '../../App.css';
   return (
     <>
       <div className="about-us-section1">
-        <h1 className='about-us'>This Is Us</h1>;
+        <h1 className='about-us'>This Is Us</h1>
+      </div>
+      <div className="about-us-section1">
+        <h1 className='about-us'>This Is Us</h1>
       </div>
     </>
   );
