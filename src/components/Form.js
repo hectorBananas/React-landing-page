@@ -8,26 +8,6 @@ const DataForm = () => (
     <h1>¿Como te podemos ayudar?</h1>
     <Formik
       initialValues={{name: "", email: "", acceptedTerms: false}}
-      validate={(values) => {
-        const errors = {}
-        if (!values.name) {
-          errors.name = "Required"
-        }
-
-        if (!values.acceptedTerms) {
-          errors.acceptedTerms =
-            "You must accept the terms and conditions before you proceed."
-        }
-
-        if (!values.email) {
-          errors.email = "Required"
-        } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-        ) {
-          errors.email = "Invalid email address"
-        }
-        return errors
-      }}
       onSubmit={(values, {setSubmitting}) => {
         // post data to server
         alert(JSON.stringify(values, null, 2))
